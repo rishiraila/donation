@@ -359,33 +359,33 @@ class _DashboardPageState extends State<DashboardPage1> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Custom AppBar
-                Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 12,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        selectedPage,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87,
-                        ),
-                      ),
-                      if (!isLargeScreen)
-                        IconButton(
-                          icon: const Icon(Icons.menu, color: Colors.black),
-                          onPressed:
-                              () => _scaffoldKey.currentState?.openDrawer(),
-                        ),
-                    ],
-                  ),
-                ),
+                // // Custom AppBar
+                // Container(
+                //   color: Colors.white,
+                //   padding: const EdgeInsets.symmetric(
+                //     horizontal: 16,
+                //     vertical: 12,
+                //   ),
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //     children: [
+                //       Text(
+                //         selectedPage,
+                //         style: const TextStyle(
+                //           fontSize: 18,
+                //           fontWeight: FontWeight.bold,
+                //           color: Colors.black87,
+                //         ),
+                //       ),
+                //       if (!isLargeScreen)
+                //         IconButton(
+                //           icon: const Icon(Icons.menu, color: Colors.black),
+                //           onPressed:
+                //               () => _scaffoldKey.currentState?.openDrawer(),
+                //         ),
+                //     ],
+                //   ),
+                // ),
 
                 // Main content
                 Expanded(
@@ -1429,7 +1429,7 @@ class SideBarMenu extends StatelessWidget {
                       50,
                     ), // Optional: Circular Image
                     child: Image.asset(
-                      '../../assets/andrej.jpg',
+                      '../..assets/assets/andrej.jpg',
                       width: 80, // Set width
                       height: 80, // Set height
                       fit: BoxFit.cover, // Ensure proper fit
